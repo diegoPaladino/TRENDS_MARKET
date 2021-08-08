@@ -1,14 +1,15 @@
-import mplfinance
+import investpy
+# import mplfinance
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from mpl_finance import candlestick_ohlc
-from mpl_finance import candlestick_ohlc
+# from mpl_finance import candlestick_ohlc
+from mplfinance.original_flavor import candlestick_ohlc
 
 acao2 = 'RSID3'
 
-df_bolsa = mplfinance.get_stock_historical_data(stock=acao2,
+df_bolsa = investpy.get_stock_historical_data(stock=acao2,
                                           country='brazil',
-                                          from_date='01/01/2010',
+                                          from_date='01/01/2011',
                                           to_date='02/07/2020')
 
 df_bolsa.index.names = ['Data']
