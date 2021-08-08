@@ -4,7 +4,7 @@ import matplotlib.dates as mdates
 from mpl_finance import candlestick_ohlc
 from mpl_finance import candlestick_ohlc
 
-acao2 = 'BPAC11'
+acao2 = 'RSID3'
 
 df_bolsa = mplfinance.get_stock_historical_data(stock=acao2,
                                           country='brazil',
